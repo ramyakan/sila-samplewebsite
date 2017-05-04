@@ -1,0 +1,52 @@
+/* Lists */
+
+.list{
+	margin-bottom:30px;
+}
+
+.list-feature{
+	@extend .list;
+	margin:0;
+	padding:0;
+	width:80%;
+	
+	li{
+		line-height:3.6em;
+		@include add-border(1px, #cccccc, bottom);
+		overflow:auto;
+	}
+	
+	li:last-child{
+		border:0;
+	}
+	
+	span{
+		vertical-align:top;
+		padding-top:9px;
+		font-size:120%;
+	}
+	
+	i{
+		margin-top:-9px;
+		margin-right:5px;
+	}
+}
+
+
+/* Headings */
+
+.heading-primary{
+	color:$primary-color;
+}
+
+.heading-primary-a{
+	@extend .heading-primary;
+	@include add-border(2px, $primary-color, bottom);
+}
+
+.heading-secondary{
+	color:$secondary-color;
+}
+
+
+
